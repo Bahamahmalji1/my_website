@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light Mode Background */
+    color: #333; /* Light Mode Text Color */
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #007BFF; /* Light Mode Navbar Background */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #0056b3; /* Light Mode Button Background */
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: #003d82; /* Light Mode Hover Effect */
+    transform: scale(1.05);
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+    margin-left: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffcc00; /* Button Color */
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: #ffaa00;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #007BFF, #00bfff); /* Light Mode Gradient */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Light Mode Footer Background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #222; /* Dark Mode Background */
+    color: #f4f4f4; /* Dark Mode Text Color */
+}
+
+body.dark-mode nav {
+    background-color: #333; /* Dark Mode Navbar Background */
+}
+
+body.dark-mode nav ul li a {
+    background-color: #555; /* Dark Mode Button Background */
+}
+
+body.dark-mode nav ul li a:hover {
+    background-color: #777; /* Dark Mode Hover Effect */
+}
+
+body.dark-mode #theme-toggle {
+    background-color: #444; /* Dark Mode Toggle Button */
+    color: #fff;
+}
+
+body.dark-mode header {
+    background: linear-gradient(135deg, #444, #555); /* Dark Mode Gradient */
+}
+
+body.dark-mode footer {
+    background-color: #333; /* Dark Mode Footer Background */
+    color: #f4f4f4;
+}
